@@ -10,7 +10,7 @@
 
 #### 方式一: 脚本生成
 1. 进入`biz-archetype/biz-archetype-portal/biz-archetype-portal-api/src/main/resources/CreateProject.bat`目录
-2. 执行命令 `CreateProject.bat 骨架名称 项目名 包名`
+2. 执行命令 `CreateProject.bat 骨架名称q 项目名 包名`
 
 例如:
 ```shell
