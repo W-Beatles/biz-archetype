@@ -17,7 +17,6 @@
 (Windows) CreateProject.bat biz-archetype-template-service biz-spring-cloud-service-order order
 (Linux) CreateProject.sh -a biz-archetype-template-service -n biz-spring-cloud-service-order -p order
 ```
-
 即可生成项目骨架原型 `biz-spring-cloud-service-order`，并且包名为 `cn.waynechu.order`
 
 #### 方式二: 页面生成（推荐）
@@ -31,13 +30,13 @@
 3. 在页面上配置项目信息即可生成并下载项目骨架原型
 
     1. 新增骨架原型  
-        ![新增骨架原型](../docs/archetype-list.png "新增骨架原型")
+        ![新增骨架原型](./docs/archetype-list.png "新增骨架原型")
 
     2. 下载骨架原型  
-        ![骨架原型列表](../docs/archetype-create.png "骨架原型列表")
+        ![骨架原型列表](./docs/archetype-create.png "骨架原型列表")
 
     3. 查看生成的项目骨架  
-        ![项目骨架](../docs/archetype-project.png "项目骨架")
+        ![项目骨架](./docs/archetype-project.png "项目骨架")
         
 ### 扩展: Maven Archetype介绍
 > http://maven.apache.org/archetype/index.html
