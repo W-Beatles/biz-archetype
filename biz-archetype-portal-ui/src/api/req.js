@@ -1,7 +1,7 @@
 import axios from 'axios'
-import Auth from '@/api/auth.js'
+// import Auth from '@/api/auth.js'
 
-const auth = new Auth()
+// const auth = new Auth()
 axios.defaults.timeout = 60 * 1000 // 默认请求超时时间
 let cancel, promiseArr = {}
 // 请求拦截器
@@ -61,7 +61,7 @@ axios.interceptors.response.use(response => {
                 break
             case 401:
                 error.message = '未授权，请重新登录'
-                auth.authRedirect()
+                // auth.authRedirect()
                 break
             case 403:
                 error.message = '拒绝访问'

@@ -19,5 +19,6 @@
     <modules>
         <module>biz-archetype-portal</module>
         <module>biz-archetype-template</module>
+        <module>biz-archetype-portal-ui-pom</module>
     </modules>
 </project>
