@@ -27,7 +27,6 @@
                 <configuration>
                     <workingDirectory>${ui.path}</workingDirectory>
                     <nodeVersion>${node.version}</nodeVersion>
-                    <npmVersion>${npm.version}</npmVersion>
                 </configuration>
                 <executions>
                     <execution>
