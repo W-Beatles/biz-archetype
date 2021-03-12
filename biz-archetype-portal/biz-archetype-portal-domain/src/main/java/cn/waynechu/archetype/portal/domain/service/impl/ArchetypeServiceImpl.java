@@ -17,7 +17,12 @@ import cn.waynechu.facade.common.enums.BizErrorCodeEnum;
 import cn.waynechu.facade.common.exception.BizException;
 import cn.waynechu.facade.common.page.BizPageInfo;
 import cn.waynechu.springcloud.common.excel.ExcelHelper;
-import cn.waynechu.springcloud.common.util.*;
+import cn.waynechu.springcloud.common.util.BeanUtil;
+import cn.waynechu.springcloud.common.util.CollectionUtil;
+import cn.waynechu.springcloud.common.util.FileUploadUtil;
+import cn.waynechu.springcloud.common.util.FileUtil;
+import cn.waynechu.springcloud.common.util.PageLoopHelper;
+import cn.waynechu.springcloud.common.util.UserUtil;
 import com.github.pagehelper.PageHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.jgit.api.Git;
@@ -30,7 +35,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -321,7 +331,6 @@ public class ArchetypeServiceImpl implements ArchetypeService, InitializingBean 
         }
         // 脚本授权
         SystemUtil.setShellPermission(scriptPath + scriptNames[1]);
-
 
         // 创建project文件夹
         String projectPath = workingRootPath + "project" + File.separator;
